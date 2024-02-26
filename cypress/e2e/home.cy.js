@@ -1,4 +1,4 @@
-describe('Central Home Test', () => {
+describe('Evoke Test', () => {
     beforeEach(() => {
         cy.visit('https://www.central.co.th/th');
         cy.viewport(1280, 800);
