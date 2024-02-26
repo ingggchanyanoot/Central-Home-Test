@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-02-26T10:23:25.945Z",
+    "end": "2024-02-26T10:23:45.612Z",
+    "duration": 19667
+  },
+  "results": [
+    {
+      "uuid": "43770676-4144-49aa-80ec-4f88f77e6b93",
+      "title": "",
+      "fullFile": "cypress/e2e/home.cy.js",
+      "file": "cypress/e2e/home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc5b2d44-0355-4e3b-8d55-d616eb4c526a",
+          "title": "EvokeHub Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Home Test",
+              "fullTitle": "EvokeHub Test Home Test",
+              "timedOut": null,
+              "duration": 18555,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#autocomplete-0-input').type(\"Speaker{enter}\");\ncy.get('[data-testid=\"btn-viewSearchFilterOnFilterBrand\"]').click();\ncy.wait(2000);\n//search marshall\ncy.get('[data-testid=\"lst-viewFilterDropdownButtonOnDropdownBrand\"] > .ais-Panel > .ais-Panel-body > :nth-child(1) > .ais-RefinementList > .ais-RefinementList-searchBox > .ais-SearchBox > .ais-SearchBox-form > .ais-SearchBox-input').click().type(\"Marshall\");\ncy.get('[data-testid=\"lst-viewFilterDropdownButtonOnDropdownBrand\"] > .ais-Panel > .ais-Panel-body > :nth-child(1) > .ais-RefinementList > .ais-RefinementList-list > .ais-RefinementList-item > :nth-child(1) > .ais-RefinementList-label > .box').click();\ncy.get('[data-testid=\"lst-viewFilterDropdownButtonOnDropdownBrand\"] > .ais-Panel > .ais-Panel-footer > .panel-actions > .show-results').click();\n//choose color\ncy.get('.FilterDropdownView__StyledContainer-sc-jvuug9-0.color-dropdown > [data-testid=\"btn-viewSearchFilterOnFilterColor\"]').click();\ncy.get('.FilterDropdownView__StyledContainer-sc-jvuug9-0.color-dropdown > [data-testid=\"btn-viewSearchFilterOnFilterColor\"] > [data-testid=\"lst-viewFilterDropdownButtonOnDropdownColor\"] > .ais-Panel > .ais-Panel-body > :nth-child(1) > .ais-RefinementList > .ais-RefinementList-list > :nth-child(1) > :nth-child(1) > .ais-RefinementList-label > .color-preview').click();\ncy.get('.FilterDropdownView__StyledContainer-sc-jvuug9-0.color-dropdown > [data-testid=\"btn-viewSearchFilterOnFilterColor\"] > [data-testid=\"lst-viewFilterDropdownButtonOnDropdownColor\"] > .ais-Panel > .ais-Panel-footer > .panel-actions > .show-results').click();\n// find the product\ncy.contains(\"Kilburn II\").click();\ncy.url({\n  decode: true\n}).should('contain', \"central.co.th/th/marshall-bluetooth-speaker-black-and-brass-kilburn-ii-mkp1524208\");\n// add to cart\ncy.get('.add-to-cart').click();\ncy.wait(2500);\ncy.get('[data-testid=\"btn-viewCart-bag\"] > .icon').click();\n// validate the item added\ncy.get('.spc-product-card').should(\"contain\", \"MARSHALL\").and(\"contain\", \"Black\").and(\"contain\", \"Kilburn II\");\ncy.get('.spc-product-card__card-quantity').should(\"contain\", \"1\");",
+              "err": {},
+              "uuid": "ae359888-cba8-498b-9ad1-704b37353458",
+              "parentUUID": "bc5b2d44-0355-4e3b-8d55-d616eb4c526a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ae359888-cba8-498b-9ad1-704b37353458"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
