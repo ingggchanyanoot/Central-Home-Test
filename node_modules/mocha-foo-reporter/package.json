@@ -1,0 +1,31 @@
+{
+  "name": "mocha-foo-reporter",
+  "version": "0.0.1",
+  "description": "example mocha reporter",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tywalch/mocha-foo-reporter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tywalch/mocha-foo-reporter/issues"
+  },
+  "homepage": "https://github.com/tywalch/mocha-foo-reporter#readme",
+  "dependencies": {
+    "electrodb": "^2.7.2",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.5",
+    "chai": "^4.3.7",
+    "typescript": "^5.1.6"
+  }
+}
